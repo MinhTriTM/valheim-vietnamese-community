@@ -6,7 +6,7 @@ Thư mục dự án từng mất `.git` và `.gitignore` sau khi thêm các bả
 
 | Nhóm | Dữ liệu hiện có | Cách dùng |
 | --- | --- | --- |
-| Game | `local/imported.jsonl`: 8.164 key cũ `quarantine`; `local/game_sources.jsonl`: 6.056 key từ bản 1.0.15 | Nguồn hiện hành và 37 ngôn ngữ nằm trong `local/`; 6.021 ứng viên MIT ở `data/valheim` đều là `draft`. |
+| Game | `local/imported.jsonl`: 8.164 key cũ `quarantine`; `local/game_sources.jsonl`: 6.056 key từ bản 1.0.15 | Nguồn hiện hành và 37 ngôn ngữ nằm trong `local/`; 6.038 ứng viên ở `data/valheim` đều là `draft`. |
 | Website | `valheimcheats.com`: 7.440 file; `valheimcheats_clone`: 488 HTML; thêm ZIP 58,9 MB | Chỉ dùng cục bộ để tra cứu. 488 đường dẫn bản clone nhỏ đều có trong bản lớn; chưa so hash nội dung và chưa chứng minh clone đầy đủ. |
 | Framework/mod | Jotunn, ValheimLib, ModSettings, các example/stub và tool khác | Dùng để tìm schema/key và viết adapter; giữ giấy phép, phiên bản và provenance riêng cho từng dự án. |
 | Công cụ | AssetRipper, CommonPackages | Dùng cục bộ; dữ liệu `AssetRipper/Localizations` dịch giao diện công cụ, không phải Valheim. |

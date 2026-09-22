@@ -6,7 +6,7 @@ Kho dữ liệu và công cụ để Việt hóa Valheim, mod và nội dung tha
 
 - Client local: Steam build `25390630`, tương ứng patch 1.0.15 ngày 18/09/2026. Đã trích 13 asset localization, 6.056 key và 37 ngôn ngữ từ `resources.assets`; dữ liệu gốc chỉ nằm trong `local/`.
 - Dedicated server local: build `21981590`, Steam đang nhắm tới `25390671` và báo `StateFlags=6`; cần cập nhật trước QA chung.
-- Có 6.021 ứng viên dịch game từ bản dịch MIT của monokaijs và 25 ứng viên dịch Jotunn/ModSettings do dự án viết. Tất cả là `draft`, chưa phải bản phát hành.
+- Có 6.038 ứng viên dịch game (6.021 từ bản dịch MIT của monokaijs, 17 do dự án viết), 25 ứng viên Jotunn/ModSettings và 9 ứng viên cho mod ví dụ. Bản game bao phủ toàn bộ key English có nội dung và không xung đột của bản trích hiện tại; tất cả vẫn là `draft`, chưa phải bản phát hành.
 - Bản dịch cũ trên máy có chuỗi lẫn nhiều ngôn ngữ; bản nhập cũ chỉ nằm trong `local/` (Git bỏ qua).
 - Chưa có kiểm thử chạy game trên bản 1.0.15.
 
