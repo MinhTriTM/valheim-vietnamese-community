@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-09-22",
+  "policy": "Các đường dẫn bên dưới là bản chụp cục bộ, bị Git bỏ qua; bản ghi này chỉ chứa metadata.",
+  "sources": [
+    {"path": "valheimcheats.com", "role": "website_reference", "upstream": "https://valheimcheats.com/", "license": "Terms của website; không cho tái xuất bản hàng loạt nội dung gốc", "revision": "unknown", "publish_snapshot": false},
+    {"path": "valheimcheats_clone", "role": "duplicate_website_reference", "upstream": "https://valheimcheats.com/", "license": "Terms của website", "revision": "unknown", "publish_snapshot": false},
+    {"path": "valheimcheats.com.zip", "role": "website_archive", "upstream": "https://valheimcheats.com/", "license": "Terms của website", "revision": "unknown", "publish_snapshot": false},
+    {"path": "clone_12_threads.py", "role": "local_crawler", "upstream": "unknown", "license": "unknown", "revision": "unknown", "publish_snapshot": false},
+    {"path": "AssetRipper", "role": "asset_inspection_tool", "upstream": "https://github.com/AssetRipper/AssetRipper", "license": "GPL-3.0; Localizations có giấy phép riêng", "revision": "unknown", "publish_snapshot": false},
+    {"path": "CommonPackages", "role": "mixed_dependencies", "upstream": "multiple", "license": "mixed MIT/GPL-3.0", "revision": "unknown", "publish_snapshot": false},
+    {"path": "ExampleMod", "role": "mod_example", "upstream": "https://github.com/Valheim-Modding/ExampleMod", "license": "unknown trong bản chụp", "revision": "unknown", "publish_snapshot": false},
+    {"path": "Jotunn", "role": "mod_framework", "upstream": "https://github.com/Valheim-Modding/Jotunn", "license": "MIT", "revision": "unknown", "publish_snapshot": false},
+    {"path": "JotunnModExample", "role": "mod_example", "upstream": "unknown", "license": "MIT No Attribution", "revision": "unknown", "publish_snapshot": false},
+    {"path": "JotunnModStub", "role": "mod_template", "upstream": "unknown", "license": "MIT No Attribution", "revision": "unknown", "publish_snapshot": false},
+    {"path": "ModSettings", "role": "mod_framework", "upstream": "unknown", "license": "MIT", "revision": "unknown", "publish_snapshot": false},
+    {"path": "Valheim.DisplayBepInExInfo", "role": "diagnostic_mod", "upstream": "unknown", "license": "MIT", "revision": "unknown", "publish_snapshot": false},
+    {"path": "ValheimLib", "role": "legacy_mod_framework", "upstream": "https://github.com/Valheim-Modding/ValheimLib", "license": "MIT", "revision": "unknown", "publish_snapshot": false},
+    {"path": "Wiki", "role": "modding_docs", "upstream": "https://github.com/Valheim-Modding/Wiki/wiki", "license": "unknown trong bản chụp", "revision": "unknown", "publish_snapshot": false},
+    {"path": "local", "role": "private_translation_workspace", "upstream": "local Valheim installation", "license": "mixed/unknown", "revision": "game build 25390630; source match not verified", "publish_snapshot": false}
+  ]
+}

@@ -15,13 +15,15 @@ Kho dữ liệu và công cụ để Việt hóa Valheim, mod và nội dung tha
 - `sources/`: URL tham khảo, phiên bản và điều kiện sử dụng; không sao chép nội dung nguồn.
 - `tools/`: nhập dữ liệu cục bộ và kiểm tra JSONL.
 - `local/`: dữ liệu lấy từ bản game/mod cài trên máy, không xuất bản.
+- `docs/INTEGRATION.md`: kết quả hợp nhất metadata của website, framework, mod và công cụ cục bộ.
 
 ## Quy trình
 
-1. Chạy `python tools/import_local.py --source <keys_en.json> --target <all_translations.json> --namespace valheim --build 25390630`. File nhập được ghi vào `local/imported.jsonl`. File JSON đầu vào phải hợp lệ; các pack cũ có cú pháp hỏng cần sửa riêng trước khi nhập.
-2. Rà soát từng dòng: đối chiếu key, ngữ cảnh trong game, placeholder, quyền phân phối và trạng thái dịch.
-3. Chỉ chép bản ghi đã rà soát và được phép công bố vào `data/`, đặt `status` là `reviewed`.
-4. Chạy `python tools/validate.py data`. Sau đó kiểm tra trong game và ghi phiên bản tương thích.
+1. Chạy `python tools/audit_local.py` để cập nhật kiểm kê tại `local/source_inventory.json`.
+2. Chạy `python tools/import_local.py --source <keys_en.json> --target <all_translations.json> --namespace valheim --build 25390630`. File nhập mặc định là `local/valheim.jsonl`; có thể dùng `--output local/imported.jsonl` cho tên cũ. Với mod chưa có bản dịch, bỏ `--target` và đặt namespace riêng. File JSON đầu vào phải hợp lệ; các pack cũ có cú pháp hỏng cần sửa riêng trước khi nhập.
+3. Rà soát từng dòng: đối chiếu key, ngữ cảnh trong game, placeholder, quyền phân phối và trạng thái dịch.
+4. Chỉ chép bản ghi đã rà soát và được phép công bố vào `data/`, đặt `status` là `reviewed`.
+5. Chạy `python tools/validate.py data`. Sau đó kiểm tra trong game và ghi phiên bản tương thích.
 
 Mod dùng namespace riêng, ví dụ `epicloot`; ghi tên mod, phiên bản, giấy phép/nguồn và đường dẫn dữ liệu trong `origin`. Khi nguồn đổi, chỉ tái sử dụng bản dịch nếu cùng key, `source_sha256` và `technical_signature`.
 

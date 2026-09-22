@@ -1,5 +1,22 @@
-local/
+# Bản chụp dữ liệu và mã nguồn dùng để đối chiếu trên máy.
+/local/
+/valheimcheats.com/
+/valheimcheats_clone/
+/valheimcheats.com.zip
+/clone_12_threads.py
+/AssetRipper/
+/CommonPackages/
+/ExampleMod/
+/Jotunn/
+/JotunnModExample/
+/JotunnModStub/
+/ModSettings/
+/Valheim.DisplayBepInExInfo/
+/ValheimLib/
+/Wiki/
+
+# File tạo trong lúc chạy công cụ.
 __pycache__/
 *.pyc
 .venv/
-
+dist/
