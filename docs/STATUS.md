@@ -19,4 +19,4 @@
 3. Xuất chỉ những bản `reviewed`, cài trên bản sao/test profile, kiểm tra giao diện, font, lore, placeholder và log BepInEx.
 4. Chỉ công bố nội dung website theo phạm vi được chủ trang cấp quyền; giữ bản chụp hiện tại trong `local/`/thư mục Git bỏ qua.
 
-CI chạy test, kiểm tra JSONL và chặn file clone/binary trong mỗi push hoặc pull request. Chạy cùng các cổng ở máy bằng `python -m unittest discover -s tests`, `python tools/validate.py data`, `python tools/check_public_files.py`.
+CI chạy test, kiểm tra JSONL và chặn file clone/binary trong mỗi push hoặc pull request. [Lượt chạy trên commit `8029766`](https://github.com/MinhTriTM/valheim-vietnamese-community/actions/runs/35697282040) đã hoàn thành `success`. Chạy cùng các cổng ở máy bằng `python -m unittest discover -s tests`, `python tools/validate.py data`, `python tools/check_public_files.py`.
