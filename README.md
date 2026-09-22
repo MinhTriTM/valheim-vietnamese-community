@@ -1,3 +1,9 @@
+<p align="center">
+  <b><a href="README.md">🇻🇳 Tiếng Việt</a></b> • 
+  <b><a href="README.en.md">🇬🇧 English</a></b> • 
+  <b><a href="README.zh-CN.md">🇨🇳 简体中文</a></b>
+</p>
+
 # 🌲 Valheim Việt Hóa Cộng Đồng (Valheim Vietnamese Community)
 
 > **Kho lưu trữ mã nguồn mở, cơ sở dữ liệu dịch thuật chuẩn hóa và bộ công cụ tự động hóa bản địa hóa toàn diện nhất dành cho tựa game Valheim (Patch 1.0.15 / Steam Build `25390630`) cùng hệ sinh thái hơn 18 bản mod phổ biến.**
