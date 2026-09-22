@@ -13,6 +13,8 @@ Thư mục dự án từng mất `.git` và `.gitignore` sau khi thêm các bả
 
 ## Cổng nhập dữ liệu
 
+Chạy `python tools/build_local_corpus.py` để lập `local/corpus.sqlite3` từ các bản chụp; tìm file bằng `python tools/search_local.py 'từ khóa'`. Corpus gồm metadata mọi file và văn bản có thể tìm kiếm từ HTML, JSON, mã nguồn và tài liệu. Nó chỉ dùng offline và bị Git bỏ qua.
+
 1. Xác định nguồn gốc chính xác của từng file: URL, phiên bản/commit, giấy phép, game/mod build.
 2. Tách dữ liệu theo `namespace` (`valheim`, `jotunn`, tên mod cụ thể). Không gộp chỉ vì key trùng tên.
 3. Đối chiếu `key + source_sha256 + technical_signature`. Key đổi nguồn hoặc token phải quay lại `draft`/rà soát; key biến mất được ghi là retired trong nhật ký cập nhật.

@@ -20,6 +20,7 @@ Kho dữ liệu và công cụ để Việt hóa Valheim, mod và nội dung tha
 ## Quy trình
 
 1. Chạy `python tools/audit_local.py` để cập nhật kiểm kê tại `local/source_inventory.json`.
+   Muốn tra cứu tất cả bản chụp trên máy, chạy `python tools/build_local_corpus.py`, rồi `python tools/search_local.py 'từ khóa'`. Cơ sở dữ liệu `local/corpus.sqlite3` không được công bố.
 2. Chạy `python tools/import_local.py --source <keys_en.json> --target <all_translations.json> --namespace valheim --build 25390630`. File nhập mặc định là `local/valheim.jsonl`; có thể dùng `--output local/imported.jsonl` cho tên cũ. Với mod chưa có bản dịch, bỏ `--target` và đặt namespace riêng. File JSON đầu vào phải hợp lệ; các pack cũ có cú pháp hỏng cần sửa riêng trước khi nhập.
 3. Rà soát từng dòng: đối chiếu key, ngữ cảnh trong game, placeholder, quyền phân phối và trạng thái dịch.
 4. Chỉ chép bản ghi đã rà soát và được phép công bố vào `data/`, đặt `status` là `reviewed`.
