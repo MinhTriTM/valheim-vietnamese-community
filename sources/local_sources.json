@@ -1,29 +1,47 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "checked_on": "2026-09-22",
-  "policy": "Các đường dẫn bên dưới là bản chụp cục bộ, bị Git bỏ qua; bản ghi này chỉ chứa metadata.",
+  "policy": "Chỉ lưu trữ metadata trích dẫn của phiên bản game Valheim mới nhất và kho mod thực tế; loại bỏ mọi bản chụp công cụ cũ và crawler.",
   "sources": [
-    {"path": "valheimcheats.com", "role": "website_reference", "upstream": "https://valheimcheats.com/", "license": "Terms của website; không cho tái xuất bản hàng loạt nội dung gốc", "revision": "unknown", "publish_snapshot": false},
-    {"path": "valheimcheats_clone", "role": "duplicate_website_reference", "upstream": "https://valheimcheats.com/", "license": "Terms của website", "revision": "unknown", "publish_snapshot": false},
-    {"path": "valheimcheats.com.zip", "role": "website_archive", "upstream": "https://valheimcheats.com/", "license": "Terms của website", "revision": "unknown", "publish_snapshot": false},
-    {"path": "clone_12_threads.py", "role": "local_crawler", "upstream": "unknown", "license": "unknown", "revision": "unknown", "publish_snapshot": false},
-    {"path": "AssetRipper", "role": "asset_inspection_tool", "upstream": "https://github.com/AssetRipper/AssetRipper", "license": "GPL-3.0; Localizations có giấy phép riêng", "revision": "unknown", "publish_snapshot": false},
-    {"path": "CommonPackages", "role": "mixed_dependencies", "upstream": "multiple", "license": "mixed MIT/GPL-3.0", "revision": "unknown", "publish_snapshot": false},
-    {"path": "ExampleMod", "role": "mod_example", "upstream": "https://github.com/Valheim-Modding/ExampleMod", "license": "unknown trong bản chụp", "revision": "unknown", "publish_snapshot": false},
-    {"path": "Jotunn", "role": "mod_framework", "upstream": "https://github.com/Valheim-Modding/Jotunn", "license": "MIT", "revision": "unknown", "publish_snapshot": false},
-    {"path": "JotunnModExample", "role": "mod_example", "upstream": "unknown", "license": "MIT No Attribution", "revision": "unknown", "publish_snapshot": false},
-    {"path": "JotunnModStub", "role": "mod_template", "upstream": "unknown", "license": "MIT No Attribution", "revision": "unknown", "publish_snapshot": false},
-    {"path": "ModSettings", "role": "mod_framework", "upstream": "unknown", "license": "MIT", "revision": "unknown", "publish_snapshot": false},
-    {"path": "Valheim.DisplayBepInExInfo", "role": "diagnostic_mod", "upstream": "unknown", "license": "MIT", "revision": "unknown", "publish_snapshot": false},
-    {"path": "ValheimLib", "role": "legacy_mod_framework", "upstream": "https://github.com/Valheim-Modding/ValheimLib", "license": "MIT", "revision": "unknown", "publish_snapshot": false},
-    {"path": "Wiki", "role": "modding_docs", "upstream": "https://github.com/Valheim-Modding/Wiki/wiki", "license": "unknown trong bản chụp", "revision": "unknown", "publish_snapshot": false},
-    {"path": "local", "role": "private_translation_workspace", "upstream": "local Valheim installation", "license": "mixed/unknown", "revision": "game build 25390630; source match not verified", "publish_snapshot": false},
-    {"path": "mods", "role": "local_mods_library", "upstream": "NexusMods / Thunderstore", "license": "mixed mod licenses", "revision": "74 local mods", "publish_snapshot": false},
-    {"path": "../Valheim", "role": "local_game_client_bepinex", "upstream": "Steam Valheim client", "license": "proprietary", "revision": "build 25390630; 7639 translations", "publish_snapshot": false},
-    {"path": "../Valheim - Copy", "role": "local_game_client_backup", "upstream": "Steam Valheim client copy", "license": "proprietary", "revision": "build 25390630", "publish_snapshot": false},
-    {"path": "../Valheim_Mod", "role": "local_game_client_modded", "upstream": "Steam Valheim modded profile", "license": "proprietary", "revision": "build 25390630; EpicLoot/PlanBuild/EpicMMO", "publish_snapshot": false},
-    {"path": "../Valheim_vi", "role": "local_game_client_vi", "upstream": "Steam Valheim legacy vi", "license": "proprietary", "revision": "legacy vi translation pack", "publish_snapshot": false},
-    {"path": "../Valheim_vi_mod", "role": "local_game_client_vi_mod", "upstream": "Steam Valheim vi modded", "license": "proprietary", "revision": "legacy vi modded profile", "publish_snapshot": false},
-    {"path": "../Valheim dedicated server", "role": "local_dedicated_server", "upstream": "Steam Dedicated Server", "license": "proprietary", "revision": "build 21981590", "publish_snapshot": false}
+    {
+      "path": "sources/game_build_25390630.json",
+      "role": "official_game_build_reference",
+      "upstream": "Steam Valheim Client (Iron Gate Studio)",
+      "license": "Proprietary",
+      "revision": "Steam build 25390630 (Patch 1.0.15 - 18/09/2026)",
+      "publish_snapshot": true
+    },
+    {
+      "path": "local",
+      "role": "private_translation_workspace",
+      "upstream": "Steam build 25390630 resources.assets",
+      "license": "mixed/unknown",
+      "revision": "build 25390630; 6056 keys extracted",
+      "publish_snapshot": false
+    },
+    {
+      "path": "mods",
+      "role": "local_mods_library",
+      "upstream": "NexusMods / Thunderstore",
+      "license": "mixed mod licenses",
+      "revision": "74 local mods",
+      "publish_snapshot": false
+    },
+    {
+      "path": "../Valheim",
+      "role": "local_game_client_bepinex",
+      "upstream": "Steam Valheim client",
+      "license": "Proprietary",
+      "revision": "Steam build 25390630 (Patch 1.0.15)",
+      "publish_snapshot": false
+    },
+    {
+      "path": "../Valheim_Mod",
+      "role": "local_game_client_modded",
+      "upstream": "Steam Valheim modded profile",
+      "license": "Proprietary",
+      "revision": "Steam build 25390630 with 104 plugins",
+      "publish_snapshot": false
+    }
   ]
 }
