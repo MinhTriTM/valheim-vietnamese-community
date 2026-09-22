@@ -6,8 +6,6 @@ import io
 import json
 from pathlib import Path
 
-import UnityPy
-
 from import_local import signature
 
 
@@ -20,6 +18,8 @@ def file_hash(path):
 
 
 def read_assets(path):
+    import UnityPy
+
     assets = []
     for obj in UnityPy.load(str(path)).objects:
         if obj.type.name != "TextAsset":

@@ -1,0 +1,22 @@
+name: Kiểm tra dữ liệu Việt hóa
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Kiểm tra cú pháp và bài test
+        run: |
+          python -m compileall -q tools tests
+          python -m unittest discover -s tests -q
+      - name: Kiểm tra bản dịch và file công khai
+        run: |
+          python tools/validate.py data
+          python tools/check_public_files.py

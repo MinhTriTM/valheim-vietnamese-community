@@ -10,6 +10,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 
 from extract_game import extract_rows
 from import_local import signature
+from import_legacy_lang import parse_line
 from validate import main as validate
 
 
@@ -25,6 +26,10 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(count, 2)
         self.assertEqual(len(keys["foo"]), 2)
         self.assertIn("German", languages)
+
+    def test_legacy_formats_keep_value_after_first_separator(self):
+        self.assertEqual(parse_line("key=giá trị=phần sau", "lang"), ("key", "giá trị=phần sau"))
+        self.assertEqual(parse_line("|key|giá trị|", "pipe"), ("key", "giá trị"))
 
     def test_reviewed_requires_reviewer_and_matching_tokens(self):
         with tempfile.TemporaryDirectory() as folder:
