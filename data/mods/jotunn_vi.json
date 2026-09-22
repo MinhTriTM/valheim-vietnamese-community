@@ -1,0 +1,23 @@
+{
+  "mod_compat_header_failed_connection": "Kết nối thất bại:",
+  "mod_compat_header_remote_version": "Phiên bản máy chủ:",
+  "mod_compat_header_local_version": "Phiên bản trò chơi của bạn:",
+  "mod_compat_header_valheim_version": "Lỗi phiên bản Valheim:",
+  "mod_compat_header_missing_mods": "Thiếu mod:",
+  "mod_compat_header_update_needed": "Mod cần cập nhật:",
+  "mod_compat_header_downgrade_needed": "Mod cần hạ phiên bản:",
+  "mod_compat_header_additional_mods": "Mod bổ sung đã tải:",
+  "mod_compat_header_further_steps": "Các bước tiếp theo:",
+  "mod_compat_valheim_version_error_description": "Máy chủ đang chạy Valheim với phiên bản mạng $1, còn trò chơi của bạn đang chạy phiên bản mạng $2",
+  "mod_compat_valheim_version_upgrade": "Vui lòng cập nhật trò chơi",
+  "mod_compat_valheim_version_downgrade": "Vui lòng hạ phiên bản trò chơi",
+  "mod_compat_further_steps_description": "Việc kiểm tra phiên bản này chỉ áp dụng cho các mod dùng Jötunn. Vui lòng xem tệp nhật ký máy chủ và máy khách trong 'BepInEx/LogOutput.log' để tìm nguyên nhân mất kết nối khác",
+  "mod_compat_mod_update": "Vui lòng cập nhật $1 lên phiên bản $2",
+  "mod_compat_mod_downgrade": "Vui lòng hạ $1 xuống phiên bản $2",
+  "mod_compat_missing_mods_description": "Vui lòng cài các mod sau",
+  "mod_compat_additional_mods_description": "Vui lòng liên hệ quản trị viên máy chủ hoặc gỡ các mod sau",
+  "mod_compat_missing_mod": "$1 $2 chưa được tải trong trò chơi của bạn",
+  "mod_compat_additional_mod": "$1 $2 chưa được tải trên máy chủ",
+  "mod_compat_open_log_file": "Mở thư mục nhật ký",
+  "mod_compat_troubleshooting": "Khắc phục sự cố"
+}

@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 def signature(value):
-    tokens = re.findall(r"\$[A-Za-z_][\w]*|\{\d+(?::[^{}]+)?\}|<[^>]+>", value)
+    tokens = re.findall(r"\$[A-Za-z_0-9][\w]*|\{\d+(?::[^{}]+)?\}|<[^>]+>", value)
     return hashlib.sha256(json.dumps(sorted(tokens), ensure_ascii=False).encode("utf-8")).hexdigest()
 
 

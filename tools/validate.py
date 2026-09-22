@@ -1,7 +1,10 @@
 """Kiểm tra schema và key trùng trong dữ liệu công khai."""
 import json
+import re
 import sys
 from pathlib import Path
+
+from import_local import signature
 
 REQUIRED = {"namespace", "key", "source_sha256", "technical_signature", "vi", "status", "origin", "game_build", "mod_version", "reviewer"}
 
@@ -19,8 +22,16 @@ def main(root):
                     raise ValueError(f"thiếu {sorted(missing)}")
                 if row["status"] not in {"draft", "reviewed"}:
                     raise ValueError("status không hợp lệ")
-                if len(row["source_sha256"]) != 64 or len(row["technical_signature"]) != 64:
+                if not all(isinstance(row[name], str) for name in REQUIRED):
+                    raise ValueError("trường bắt buộc phải là chuỗi")
+                if not row["namespace"] or not row["key"] or not row["vi"] or not row["origin"]:
+                    raise ValueError("thiếu định danh, bản dịch hoặc nguồn gốc")
+                if row["status"] == "reviewed" and not row["reviewer"]:
+                    raise ValueError("bản reviewed cần người rà soát")
+                if not re.fullmatch(r"[0-9a-f]{64}", row["source_sha256"]) or not re.fullmatch(r"[0-9a-f]{64}", row["technical_signature"]):
                     raise ValueError("hash không hợp lệ")
+                if signature(row["vi"]) != row["technical_signature"]:
+                    raise ValueError("token bản dịch khác nguồn")
                 identity = (row["namespace"], row["key"], row["source_sha256"])
                 if identity in seen:
                     raise ValueError("key trùng")
