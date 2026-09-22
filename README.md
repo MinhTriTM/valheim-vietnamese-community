@@ -26,6 +26,7 @@ Kho dữ liệu và công cụ để Việt hóa Valheim, mod và nội dung tha
 3. Với bản cũ, chạy `python tools/import_local.py --source <keys_en.json> --target <all_translations.json> --namespace valheim --build 25390630`. File nhập mặc định là `local/valheim.jsonl`; có thể dùng `--output local/imported.jsonl` cho tên cũ. Với mod chưa có bản dịch, bỏ `--target` và đặt namespace riêng.
 4. Rà soát từng dòng: đối chiếu key, ngữ cảnh trong game, placeholder, quyền phân phối và trạng thái dịch. Các ứng viên game nằm trong [`data/valheim`](data/valheim/PROVENANCE.md); ứng viên mod nằm trong [`data/mods`](data/mods/README.md).
 5. Chạy `python tools/validate.py data`. Dùng `python tools/build_translation.py --namespace valheim --source-catalog local/game_sources.jsonl --preview` để tạo bản QA cục bộ. Bỏ `--preview` khi chỉ xuất những mục `reviewed` còn khớp nguồn; sau đó kiểm tra trong game.
+   Có thể tạo gói QA BepInEx cục bộ bằng `python tools/package_preview.py --upstream <checkout monokaijs/valheim-viet-hoa>`; gói nằm trong `local/` và không sửa bản cài Valheim.
 
 Mod dùng namespace riêng, ví dụ `epicloot`; ghi tên mod, phiên bản, giấy phép/nguồn và đường dẫn dữ liệu trong `origin`. Khi nguồn đổi, chỉ tái sử dụng bản dịch nếu cùng key, `source_sha256` và `technical_signature`.
 

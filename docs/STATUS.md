@@ -10,6 +10,7 @@
 | Dữ liệu legacy | PARTIAL | `Vietnamese.lang`: 34 key; `vi.txt`: 4.045 key, trong đó 3.980 key trùng tên nguồn game hiện tại. Tất cả nằm trong `local/` ở trạng thái `quarantine`, chưa có hash nguồn/giấy phép đủ để nhập công khai. |
 | Rà soát tĩnh toàn bộ ứng viên game | PASS | 6.038 mục qua kiểm tra token. Quét ưu tiên đánh dấu 16 mục giữ nguyên English; đã xem từng mục, đều là tên riêng, tên ngôn ngữ hoặc câu hát. Đây không phải kiểm tra nghĩa toàn bộ. |
 | Xuất bản cài game | BLOCKED | Cổng xuất mặc định từ chối vì không có mục `reviewed`. Bản `--preview` chỉ dành cho QA cục bộ. |
+| Gói preview BepInEx | PARTIAL | `local/valheim-preview-25390630.zip`: 11 file, ZIP CRC pass, gồm 6.038 key QA và loader/font từ checkout monokaijs. Chưa xác nhận chạy trên build 1.0.15. |
 | Kiểm thử runtime 1.0.15 và dedicated server | NOT_RUN | Chưa cài bản `draft` vào game; dedicated server local chưa đạt target build Steam. |
 
 ## Việc cần làm để phát hành
