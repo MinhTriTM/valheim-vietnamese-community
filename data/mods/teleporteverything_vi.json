@@ -1,0 +1,10 @@
+{
+  "te_deducted_items_detailed_message": "Đã trừ $1 trên tổng số $2 $3 làm phí vận chuyển hàng cấm.",
+  "te_deducted_items_message": "Đã trừ $1 trên tổng số $2 vật phẩm làm phí vận chuyển hàng cấm.",
+  "te_item_transport_fee": "Phí Vận Chuyển: <color=orange>$1%</color>",
+  "te_transported_allies_message": "Đã dịch chuyển $1 đồng minh. Bật dịch chuyển đồng minh: $2.",
+  "te_transported_enemies_message": "Dẫn theo kẻ địch! $1 kẻ thù tràn qua cổng!!!",
+  "te_transporting_allies_message": "Đang dịch chuyển $1 đồng minh!",
+  "te_transporting_enemies_message": "Coi chừng: $1 kẻ địch có thể lao qua cổng!",
+  "te_vikings_dont_run": "Chiến binh Viking không trốn chạy trận chiến: $1 kẻ thù trong phạm vi $2 mét."
+}

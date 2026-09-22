@@ -1,5 +1,6 @@
 # Bản chụp dữ liệu và mã nguồn dùng để đối chiếu trên máy.
 /local/
+/mods/
 /valheimcheats.com/
 /valheimcheats_clone/
 /valheimcheats.com.zip
@@ -14,6 +15,7 @@
 /Valheim.DisplayBepInExInfo/
 /ValheimLib/
 /Wiki/
+/Tài Liệu/
 
 # File tạo trong lúc chạy công cụ.
 __pycache__/

@@ -4,10 +4,10 @@ import sys
 from pathlib import Path
 
 BLOCKED_PREFIXES = (
-    "local/", "valheimcheats.com/", "valheimcheats_clone/", "AssetRipper/",
+    "local/", "mods/", "valheimcheats.com/", "valheimcheats_clone/", "AssetRipper/",
     "CommonPackages/", "ExampleMod/", "Jotunn/", "JotunnModExample/",
     "JotunnModStub/", "ModSettings/", "Valheim.DisplayBepInExInfo/",
-    "ValheimLib/", "Wiki/",
+    "ValheimLib/", "Wiki/", "Tài Liệu/",
 )
 BLOCKED_SUFFIXES = (".dll", ".exe", ".zip", ".assets", ".bundle", ".pak")
 BLOCKED_NAMES = {"valheimcheats.com.zip", "clone_12_threads.py"}

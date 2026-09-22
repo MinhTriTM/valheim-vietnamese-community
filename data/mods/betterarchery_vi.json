@@ -1,0 +1,13 @@
+{
+  "mod_betterarchery_leather_quiver_description": "An arrow holder made with leathers. Gives 3 extra slots for your lovely arrows.",
+  "mod_betterarchery_leather_quiver_name": "Leather Quiver",
+  "mod_betterarchery_quiver_drop_outside_error": "Tháo trang bị ống tên trước.",
+  "mod_betterarchery_quiver_equipped_error": "Bạn không thể thả ống tên khi đang trang bị.",
+  "mod_betterarchery_quiver_item_swap_error": "Không thể đổi vật phẩm này.",
+  "mod_betterarchery_quiver_swap_chest_error": "Tháo trang bị vật phẩm trước khi di chuyển.",
+  "mod_betterarchery_quiver_transfer_chest_error": "Hãy tháo trang bị vật phẩm trước.",
+  "mod_betterarchery_quiver_unequip_error": "Lấy hết tên trong ống ra trước.",
+  "mod_betterarchery_quiver_wrong_item_error": "Bạn không thể đặt vật phẩm này vào ống tên.",
+  "mod_betterarchery_test": "Đã Tải",
+  "mod_betterarchery_tombstone_space_error": "Không đủ chỗ trong túi đồ, Vật phẩm bị rơi:"
+}

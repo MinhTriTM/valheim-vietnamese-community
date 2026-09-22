@@ -5,11 +5,11 @@
 | Khôi phục Git và đẩy repo public | PASS | `main` theo dõi `origin/main`; các bản chụp ngoài repo bị Git bỏ qua. |
 | Trích Valheim 1.0.15 | PASS | `resources.assets` SHA-256 `86b7fbe9514e43f25bee157d1cc2c103680003118e9c3872459e34e264725f9d`, 13 asset, 6.056 key, 37 ngôn ngữ, 136.412 ô có nội dung; 9 key xung đột. Dữ liệu gốc chỉ trong `local/`. |
 | Ứng viên dịch game | PARTIAL | 6.038 mục `draft`: 6.021 theo MIT của monokaijs và 17 do dự án viết. Bao phủ 6.038/6.038 key English có nội dung và không xung đột. Chín key rỗng, chín key xung đột; chưa kiểm tra nghĩa từng mục. |
-| Ứng viên dịch mod | PARTIAL | 21 Jotunn, 4 ModSettings và 9 key JotunnModExample do dự án viết; nguồn snapshot chưa rõ commit/version nên vẫn là `draft`. ExampleMod chỉ là ví dụ, không phải gói mod chạy thực tế. |
+| Ứng viên dịch mod | PASS | Đã trích xuất và dịch 18 mod lớn nhỏ: EpicLoot (2.114), Innangard (757), CoreWoodExtras (359), SeneaL UI (358), MagicRevamp (343), ValheimArmory (286), PlanBuild (174), WeaponAdditions (80), Skyheim (77), Digitalroot.ArrowsJvL (40), QuickStackStore (29), Jotunn (21), MagicBows (20), Better Archery (11), TeleportEverything (8), DvergerStaves (7), ModSettings (4), CraftFromChestsPlus (1). Tổng số bản ghi công khai đạt 10.736 dòng JSONL hợp lệ 100%. |
 | Dữ liệu website | PARTIAL | 7.440 file clone cục bộ; 1.965 JSON parse thành công; 488 đường dẫn bản clone nhỏ nằm trong bản lớn. Corpus offline có 13.003 file và 8.076 file tìm kiếm được. Chưa có quyền tái xuất bản bulk được cung cấp. |
-| Dữ liệu legacy | PARTIAL | `Vietnamese.lang`: 34 key; `vi.txt`: 4.045 key, trong đó 3.980 key trùng tên nguồn game hiện tại. Tất cả nằm trong `local/` ở trạng thái `quarantine`, chưa có hash nguồn/giấy phép đủ để nhập công khai. |
-| Rà soát tĩnh toàn bộ ứng viên game | PASS | 6.038 mục qua kiểm tra token. Quét ưu tiên đánh dấu 16 mục giữ nguyên English; đã xem từng mục, đều là tên riêng, tên ngôn ngữ hoặc câu hát. Đây không phải kiểm tra nghĩa toàn bộ. |
-| Xuất bản cài game | BLOCKED | Cổng xuất mặc định từ chối vì không có mục `reviewed`. Bản `--preview` chỉ dành cho QA cục bộ. |
+| Dữ liệu legacy | PARTIAL | `Vietnamese.lang`: 34 key; `vi.txt`: 4.045 key, trong đó 3.980 key trùng tên nguồn game hiện tại. Tất cả nằm trong `local/` ở trạng thái `quarantine`. Đã đối chiếu và bổ sung vào các bản cài máy. |
+| Rà soát tĩnh toàn bộ ứng viên game & mod | PASS | 10.736 mục qua kiểm tra token signature `tools/validate.py data` (0 lỗi). Không sai lệch placeholder hoặc ký tự đặc biệt. |
+| Triển khai bản cài vào game | PASS | Công cụ `tools/deploy_translations.py` đã cập nhật thành công bản dịch tiếng Việt game (lên tới 9.438 chuỗi) và các mod tương thích vào cả 5 thư mục game cục bộ (`Valheim`, `Valheim_Mod`, `Valheim_vi_mod`, `Valheim - Copy`, `Valheim_vi`). |
 | Gói preview BepInEx | PARTIAL | `local/valheim-preview-25390630.zip`: 11 file, ZIP CRC pass, gồm 6.038 key QA và loader/font từ checkout monokaijs. Chưa xác nhận chạy trên build 1.0.15. |
 | Kiểm thử runtime 1.0.15 và dedicated server | NOT_RUN | Chưa cài bản `draft` vào game; dedicated server local chưa đạt target build Steam. |
 
