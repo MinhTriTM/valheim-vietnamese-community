@@ -39,4 +39,5 @@ Xem [CONTRIBUTING.md](CONTRIBUTING.md). Mỗi PR nên kèm nguồn gốc, phiên
 `valheimcheats.com` được ghi trong `sources/valheimcheats.json` dưới dạng liên kết và danh mục chủ đề. Bản chụp cục bộ đã được lập chỉ mục: 1.965 JSON hợp lệ có thể tra cứu trong `local/`. Điều khoản trang cấm tái xuất bản hàng loạt nội dung gốc; việc đăng toàn bộ lên repo chỉ thực hiện sau khi được chủ trang cấp quyền rõ ràng.
 
 Xem [trạng thái QA](docs/STATUS.md) để biết ranh giới giữa dữ liệu đã trích, bản dịch nháp và bản phát hành.
+Xem [giải thích từng thư mục và file](docs/FOLDER_GUIDE.md) để phân biệt nguồn cục bộ với nội dung repo công khai.
 Mỗi pull request được CI kiểm tra cú pháp, test, schema/token và danh sách file công khai; bản clone và dữ liệu cục bộ vẫn bị chặn.
