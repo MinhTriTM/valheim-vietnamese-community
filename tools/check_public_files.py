@@ -7,7 +7,7 @@ BLOCKED_PREFIXES = (
     "local/", "mods/", "valheimcheats.com/", "valheimcheats_clone/", "AssetRipper/",
     "CommonPackages/", "ExampleMod/", "Jotunn/", "JotunnModExample/",
     "JotunnModStub/", "ModSettings/", "Valheim.DisplayBepInExInfo/",
-    "ValheimLib/", "Wiki/", "Tài Liệu/",
+    "ValheimLib/", "Wiki/", "Tài Liệu/", "Lich_Su_Truy_Van/",
 )
 BLOCKED_SUFFIXES = (".dll", ".exe", ".zip", ".assets", ".bundle", ".pak")
 BLOCKED_NAMES = {"valheimcheats.com.zip", "clone_12_threads.py"}
